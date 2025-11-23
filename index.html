@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaloon Financeiro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              avaloon: {
+                green: '#19C37D',
+                darkGreen: '#0F8A57',
+                charcoal: '#111418',
+                card: '#1A1F24',
+                text: '#C9D1D9',
+                white: '#FFFFFF'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #111418;
+        color: #C9D1D9;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+      /* Custom Scrollbar for Dark Mode */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111418; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2C333A; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #19C37D; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "date-fns/": "https://aistudiocdn.com/date-fns@^4.1.0/",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "date-fns/locale": "https://aistudiocdn.com/date-fns@^4.1.0/locale",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "crypto": "https://aistudiocdn.com/crypto@^1.0.1",
+    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
+    "axios": "https://aistudiocdn.com/axios@^1.13.2",
+    "firebase-admin": "https://aistudiocdn.com/firebase-admin@^13.6.0",
+    "firebase-functions": "https://aistudiocdn.com/firebase-functions@^7.0.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
